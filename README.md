@@ -5,6 +5,13 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 Environment dependencies:
 - Node.js v18 or higher (project created on v20)
 
+
+To check your Node.js version:
+
+```bash
+node -v
+```
+
 To run the local server:
 
 ```bash
