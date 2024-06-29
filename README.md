@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+Wanna check the latest version on `main` branch? [Click here](https://ana-classroom.vercel.app)
+
 ## Getting Started
 
 Environment dependencies:
