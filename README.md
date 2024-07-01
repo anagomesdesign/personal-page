@@ -68,6 +68,9 @@ Hint:
 - If you're new to Git and GitHub or want to refesh your memory, I suggest checking this [YouTube playlist](https://www.youtube.com/playlist?list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR) to learn more about it.
 
 - If you need to run `sudo` for npm, I suggest installing NVM (Node Version Manager) to install Node and avoid permission issues.
-    - To install on MacOS, Check [this](https://youtu.be/S8ovFOnB4Sg?si=uF0bz7uKBtXqBryY) YouTube video.
+  - To install on MacOS, Check [this](https://youtu.be/S8ovFOnB4Sg?si=uF0bz7uKBtXqBryY) YouTube video.
   - To install on Linux or Windows WSL, Check [this](https://youtu.be/z6Tta9ZbbGg?si=RIkxKV5LJOmz_NNg) YouTube video.
   - To install on Windows, Check [this](https://youtu.be/5LxEQivuo0M?si=TdnrbNpuQZK0oS9E) YouTube video.
+
+- NVM is used to install and use different Node versions at the same time. After installing a version with NVM, the NPM commands won't require `sudo`.
+    - For examples on how to use NVM, check [this link](https://github.com/nvm-sh/nvm?tab=readme-ov-file#usage).
