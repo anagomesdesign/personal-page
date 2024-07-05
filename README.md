@@ -80,3 +80,5 @@ Hint:
 - I noticed some requirements for HTML tags that are not enforced in pure HTML but are required in React.
   - When using tags without a child, you need to close them with a `/` at the end. For example, `<img src="..." alt="..." />` instead of `<img src="..." alt="...">`.
   - When using tags with a child, you need to close them with a `</>` at the end. For example, `<div><p>...</p></div>` instead of `<div><p>...</p><div>`.  
+
+- Another important note is that the `class` property from HTML was renamed to `className` in React instead. For example, `<div class="container">` should be `<div className="container">`.
