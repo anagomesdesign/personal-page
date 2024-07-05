@@ -83,6 +83,15 @@ If you encounter any blockers, look for the [Possible blockers](#possible-blocke
 - Some requirements for HTML tags that are not enforced in pure HTML but are **required** in React.
   - When using tags without a child, you need to close them with a `/` at the end. For example, `<img src="..." alt="..." />` instead of `<img src="..." alt="...">`.
   - When using tags with a child, you need to close them with a `</>` at the end. For example, `<div><p>...</p></div>` instead of `<div><p>...</p><div>`.  
+  - Special characters need the propper HTML encoding.
+    - Examples:
+      - `&` should be `&amp;` -> &amp;
+      - `<` should be `&lt;` -> &lt;
+      - `>` should be `&gt;` -> &gt;
+      - `"` should be `&quot;` -> &quot;
+      - `'` should be `&apos;` -> &apos;
+    - You can read this raw README.md to see the above examples.
+    - You can check the full list of HTML entities [here](https://www.w3schools.com/html/html_entities.asp).
 
 - The `class` property from HTML was renamed to `className` in React instead. For example, `<div class="container">` should be `<div className="container">`.
 
