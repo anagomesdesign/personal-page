@@ -4,6 +4,7 @@
 - [Assignments](#assignments)
   - [1. Migrate an existing HTML/CSS project to Next.js](#1-migrate-an-existing-htmlcss-project-to-nextjs)
 - [Tips and Resources](#resources)
+- [Important Notes](#important-notes)
 
 ## Getting Started
 
