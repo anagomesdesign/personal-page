@@ -77,8 +77,10 @@ Hint:
 
 ## Important Notes
 
-- I noticed some requirements for HTML tags that are not enforced in pure HTML but are required in React.
+- Some requirements for HTML tags that are not enforced in pure HTML but are **required** in React.
   - When using tags without a child, you need to close them with a `/` at the end. For example, `<img src="..." alt="..." />` instead of `<img src="..." alt="...">`.
   - When using tags with a child, you need to close them with a `</>` at the end. For example, `<div><p>...</p></div>` instead of `<div><p>...</p><div>`.  
 
-- Another important note is that the `class` property from HTML was renamed to `className` in React instead. For example, `<div class="container">` should be `<div className="container">`.
+- The `class` property from HTML was renamed to `className` in React instead. For example, `<div class="container">` should be `<div className="container">`.
+
+- The `style` property in HTML is used to add inline CSS. In React, you can use the `style` property as well, but you need to pass an **object** with the CSS properties. For example, `<div style="color: red;">` should be `<div style={{ color: 'red' }}>`.
