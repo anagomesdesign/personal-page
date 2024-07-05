@@ -74,3 +74,9 @@ Hint:
 
 - NVM is used to install and use different Node versions at the same time. After installing a version with NVM, the NPM commands won't require `sudo`.
     - For examples on how to use NVM, check [this link](https://github.com/nvm-sh/nvm?tab=readme-ov-file#usage).
+
+## Important Notes
+
+- I noticed some requirements for HTML tags that are not enforced in pure HTML but are required in React.
+  - When using tags without a child, you need to close them with a `/` at the end. For example, `<img src="..." alt="..." />` instead of `<img src="..." alt="...">`.
+  - When using tags with a child, you need to close them with a `</>` at the end. For example, `<div><p>...</p></div>` instead of `<div><p>...</p><div>`.  
