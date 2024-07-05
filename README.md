@@ -4,7 +4,7 @@
 - [Assignments](#assignments)
   - [1. Migrate an existing HTML/CSS project to Next.js](#1-migrate-an-existing-htmlcss-project-to-nextjs)
 - [Tips and Resources](#resources)
-- [Important Notes](#important-notes)
+- [Possible blockers](#possible-blockers)
 
 ## Getting Started
 
@@ -53,6 +53,8 @@ There is an existing "Hello World" that can be used as a reference.
 Hint: 
 - you only need to copy the `body` content of your HTML file into the `index.tsx` file.
 
+If you encounter any blockers, look for the [Possible blockers](#possible-blockers) section. If you still have any issues, feel free to ask me.
+
 
 ## Resources
 
@@ -76,7 +78,7 @@ Hint:
 - NVM is used to install and use different Node versions at the same time. After installing a version with NVM, the NPM commands won't require `sudo`.
     - For examples on how to use NVM, check [this link](https://github.com/nvm-sh/nvm?tab=readme-ov-file#usage).
 
-## Important Notes
+## Possible blockers
 
 - Some requirements for HTML tags that are not enforced in pure HTML but are **required** in React.
   - When using tags without a child, you need to close them with a `/` at the end. For example, `<img src="..." alt="..." />` instead of `<img src="..." alt="...">`.
@@ -85,3 +87,5 @@ Hint:
 - The `class` property from HTML was renamed to `className` in React instead. For example, `<div class="container">` should be `<div className="container">`.
 
 - The `style` property in HTML is used to add inline CSS. In React, you can use the `style` property as well, but you need to pass an **object** with the CSS properties. For example, `<div style="color: red;">` should be `<div style={{ color: 'red' }}>`.
+
+- Having trouble using images with `<img/>` tag? refer to [this comment](https://stackoverflow.com/a/68453264) on StackOverflow. Attention on the `import` and `<img src={}/>`.
