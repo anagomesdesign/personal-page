@@ -159,7 +159,6 @@ I suggest starting with `Br.tsx` first to understand how to import and use a com
 Then move on to `P.tsx` and finally `Link.tsx`.<br/>
 Before using any of them, open the component file and check its content to understand what it does.<br/>
 I left some more explanations in the comments of each file to help you understand them better.<br/>
-If you have any blockers, look for the [Possible blockers](#possible-blockers) section. If your problem is not listed feel free to reach me at any time!!<br/>
 
 Just like the first assignment, I don't want you to worry about understanding everything right now.<br/>
 Once you finish the assignment, I'll give you some more context as I did with the first assignment.<br/>
@@ -167,7 +166,7 @@ This way you can understand the concepts better and apply them in the next assig
 
 **BONUS:**<br/>
 Did you find it easy and want to do a bit more?<br/>
-Follow the steps I did to create the initial components and create the remaining ones from your HTML.<br/>
+Follow the steps I did to create the initial components and create the remaining `div`, `img` and `h1` from your HTML.<br/>
 
 **Important:**<br/>
 Now you're going to start importing components from other directories.<br/>
