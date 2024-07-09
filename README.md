@@ -86,8 +86,6 @@ Congratulations! You've successfully already edited your first React component! 
 Well, the `index.tsx` file is a React component already.<br/>
 In React, **almost** everything is a component. A component can be defined in a number of ways, but the most common way is to use a function.
 
-<div style="width: 75%">
-
 ```tsx
 export default function Index() {
     return (
@@ -137,8 +135,6 @@ Let me break it down for you:
   
   ```
 
-</div>
-
 A **Function** that returns a **JSX element** is what we call a **React Component**.<br/> 
 **JSX** is a syntax extension for JavaScript that looks similar to HTML as you might've noticed when completing your first assignment.<br/>
 Using JSX syntax, you can write HTML elements inside your JavaScript code almost exactly as you would in HTML.<br/>
@@ -146,7 +142,7 @@ Some important differences were covered in the [Possible blockers](#possible-blo
 
 **TASK:**<br/>
 For this assignment, I took the liberty of creating three new components.<br/> 
-Each one was chosen and named to help you understand the basics of React components.<br/>
+Each one was chosen and named to help you understand one basic concept of React Components.<br/>
 They can all be found under the `src/app/components` directory.
 - `Br.tsx`
   - As the name suggests, this component is a line break. This is the simplest component you can create since it doesn't need anything to be rendered.
@@ -162,6 +158,7 @@ Your task is to use these components in the `index.tsx` file instead your regula
 I suggest starting with `Br.tsx` first to understand how to import and use a component.<br/>
 Then move on to `P.tsx` and finally `Link.tsx`.<br/>
 Before using any of them, open the component file and check its content to understand what it does.<br/>
+I left some more explanations in the comments of each file to help you understand them better.<br/>
 If you have any blockers, look for the [Possible blockers](#possible-blockers) section. If your problem is not listed feel free to reach me at any time!!<br/>
 
 Just like the first assignment, I don't want you to worry about understanding everything right now.<br/>
