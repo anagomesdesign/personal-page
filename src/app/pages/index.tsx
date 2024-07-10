@@ -19,7 +19,7 @@ export default function Index() {
                     
                     <p>
                         
-                        I'm a Brazilian Product Designer currently based in Canada. I have +10 years of experience working with design, user experience and technology. In my spare time, I love playing video games, drinking coffee and exploring the outdoors. 
+                        I&apos;m a Brazilian Product Designer currently based in Canada. I have +10 years of experience working with design, user experience and technology. In my spare time, I love playing video games, drinking coffee and exploring the outdoors. 
                         <br/><br/>
                         Currently, I work as a Senior Product Designer for <a href="https://www.spud.ca/" target="_blank">Spud</a> and in the past, I worked with companies like <a href="https://www.skipthedishes.com/" target="_blank"> SkipTheDishes</a>, <a href="https://winnipeg.ubisoft.com/" target="_blank">Ubisoft</a> and <a href="https://www.shopify.com/ca" target="_blank">Shopify</a>. 
                         <br/><br/>
