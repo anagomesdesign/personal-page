@@ -31,7 +31,14 @@ npm install
 npm i
 ```
 
-To run the local server:
+**Important:**<br/>
+- The command above will read the `package.json` file in your project for any library it might need and will install all of them in a new folder called `node_modules`.
+- This is the `Node.js` way of allowing people make use of libraries from the community.
+- When running this command always make sure you are inside the project folder so the command can read the correct file.
+- Any `npm install` that you ran for other projects will not reflect here.
+- When cloning a new project always run it first before any other action.
+
+To run the local server and view your progress:
 
 ```bash
 npm run dev
@@ -47,6 +54,8 @@ This way, you can keep track of your progress and have a clean codebase.
 As a rule of thumb, I suggest this course of action for each assignment:
 - Make sure you're on the `main` branch.
 - Pull the latest changes from the remote repository.
+- Always remember to run `npm install` before starting your work.
+  - This is not always necessary, but a good practice when working with more people.
 - Create a new branch for the assignment.
 - Work on the assignment.
   - If you have any blockers, check the [Possible blockers](#possible-blockers) section.
@@ -98,6 +107,8 @@ After installing a Node version with **NVM**, the NPM commands won't require `su
     - For examples on how to use NVM, check [this link](https://github.com/nvm-sh/nvm?tab=readme-ov-file#usage).
 
 ## Possible blockers
+
+- Seeing weird JSX Element errors? You might've forgotten to run `npm install (or npm i)`. Make sure to run it in the project root before starting your assignments.
 
 - Some requirements for HTML tags that are not enforced in pure HTML but are **required** in React.
   - When using tags without a child tag/content, you need to close them with a `/` at the end.
