@@ -2,6 +2,7 @@
 
 - [Getting Started](#getting-started)
 - [Assignment Guidelines](#assignments)
+- [Assignments](#assignments)
   - [1. Migrate an existing HTML/CSS project to Next.js](#1-migrate-an-existing-htmlcss-project-to-nextjs)
   - [2. Start using React components](#2-start-using-react-components)
 - [Tips and Resources](#resources)
@@ -49,28 +50,48 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Assignment Guidelines
 
+### 1. Preparing for the assignment
+
 For every assignment, I suggest creating a new branch called `assignment/1-migrate-html-css`, `assignment/2-create-component` and so on.<br/>
 This way, you can keep track of your progress and have a clean codebase.
 
-As a rule of thumb, I suggest this course of action for each assignment:
+Before start coding, I recommend following these steps:
 - Make sure you're on the `main` branch.
-- Pull the latest changes from the remote repository.
+- **Pull** the latest changes from the remote repository.
 - Always remember to run `npm install` before starting your work.
-  - This is not always necessary, but a good practice when working with more people.
+  - This is not always necessary, but a good practice when working with multiple people.
 - Create a new branch for the assignment.
-- Work on the assignment.
-  - If you have any blockers, check the [Possible blockers](#possible-blockers) section.
-  - Even if you think you haven't finished the assignment, if you have a working version, it's a good practice to commit your progress.<br/>
-    This way, if you have any issues, you can go back to a working version and start fresh.
+
+### 2. Working on the assignment
+
+With everything set up, you can start working on the assignment.
+
+- Read the assignment description carefully.
+- If you have any blockers, check the [Possible blockers](#possible-blockers) section.<br/>
+I'll do my best to cover the most common issues you might face and how to solve them.
+- Even if you think you haven't finished the assignment, if you have a working version, it's a good practice to commit your progress.<br/>
+This way, if you have any issues, you can go back to a working version and start fresh.
+  - This uses some git knowledge.
+
+
+### 3. Finishing the assignment
+
+When you think you've finished the assignment, it's time to publish your work.
+
+- Make sure you've tested your code locally.
+- Commit your latest changes.
 - Push your code to the remote repository.
-- Create a pull request to the `main` branch.
+- Create a pull request from **your branch** to the `main` branch.
+  - This can be done directly through VS Code, but I'd recommend doing it on GitHub.<br/>
+  The interface is more user-friendly and you can see the changes you're making.
 - Assign me for a review.
-- Need refresh on Git commands, Git on VS Code or Github? Check the [Resources](#resources) section.
+- Need a refresh on **Git commands**, **Git on VS Code** or **Github**? Check the [Resources](#resources) section.
 
 PS: Every time you publish a branch on GitHub, Vercel will create a new preview link in the cloud.<br/>
 If you want to see it, you can create a Pull Request (even if it's not finished) and check the deployment link Vercel will provide once the PR is created.<br/>
 It will even tell you if the deployment is successful or not.
 
+## Assignments
 ### 1. Migrate an existing HTML/CSS project to Next.js
 
 **TASK:**<br/>
