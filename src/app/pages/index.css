@@ -1,3 +1,52 @@
-.main {
-    font-size: 96px;
+body {
+    margin: 0;
+    background-color: #1E1E1E;
+    position: relative;
+    height: auto;
+    min-height: 100%;
+}
+
+p, h1, a {
+    font-family: Roboto, sans-serif;
+    color: #F6F6F6;
+}
+
+p {
+    line-height: 32px;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "column-1 column-2";
+    
+}
+
+grid-item:nth-child(1) {grid-area: column-1;}
+grid-item:nth-child(2) {grid-area: column-2}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas: "column-1" "column-2";
+    }
+}
+
+.portrait {
+    background-image: url("img/ana-gomes-photo.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 10vh;
+
+}
+
+.bio { 
+    padding-left: 10vh;
+    padding-right: 10vh;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
 }
