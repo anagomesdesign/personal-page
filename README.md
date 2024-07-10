@@ -64,6 +64,7 @@ As a rule of thumb, I suggest this course of action for each assignment:
 - Push your code to the remote repository.
 - Create a pull request to the `main` branch.
 - Assign me for a review.
+- Need refresh on Git commands, Git on VS Code or Github? Check the [Resources](#resources) section.
 
 PS: Every time you publish a branch on GitHub, Vercel will create a new preview link in the cloud.<br/>
 If you want to see it, you can create a Pull Request (even if it's not finished) and check the deployment link Vercel will provide once the PR is created.<br/>
