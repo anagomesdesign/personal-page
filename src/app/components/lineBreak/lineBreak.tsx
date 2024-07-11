@@ -7,7 +7,7 @@
 //      import Br from 'path/to/br';
 
 
-export default function Br() {
+export default function LineBreak() {
     //This component only returns a line break
     return(
         <br/>
