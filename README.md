@@ -77,7 +77,7 @@ This way, if you have any issues, you can go back to a working version and start
 
 ### 3. Finishing the assignment
 
-When you think you've finished the assignment, it's time to publish your work.
+When you finish the assignment, it's time to publish your work.
 
 - Make sure you've tested your code locally.
 - Commit your latest changes.
