@@ -6,6 +6,7 @@
   - [1. Migrate an existing HTML/CSS project to Next.js](#1-migrate-an-existing-htmlcss-project-to-nextjs)
   - [2. Start using React components](#2-start-using-react-components)
 - [Tips and Resources](#resources)
+  - For Git commands, VS Code Git tool, GitHub Pull Requests, and more.
 - [Possible blockers](#possible-blockers)
 
 ## Getting Started
@@ -89,7 +90,8 @@ When you think you've finished the assignment, it's time to publish your work.
 
 PS: Every time you publish a branch on GitHub, Vercel will create a new preview link in the cloud.<br/>
 If you want to see it, you can create a Pull Request (even if it's not finished) and check the deployment link Vercel will provide once the PR is created.<br/>
-It will even tell you if the deployment is successful or not.
+It will even tell you if the deployment is successful or not.<br/>
+This requires a vercel account linked to your GitHub account. You can create one for free [here](https://vercel.com/signup).<br/>
 
 ## Assignments
 ### 1. Migrate an existing HTML/CSS project to Next.js
