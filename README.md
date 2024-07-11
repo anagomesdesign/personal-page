@@ -193,6 +193,14 @@ Then move on to `P.tsx` and finally `Link.tsx`.<br/>
 Before using any of them, open the component file and check its content to understand what it does.<br/>
 I left some more explanations in the comments of each file to help you understand them better.<br/>
 
+To use them, simply call them the same way you use an HTML tag<br/>
+Example:
+```tsx
+  <Br/>
+  <P>This is a text inside a paragraph.</P>
+  <Link/>
+```
+
 Just like the first assignment, I don't want you to worry about understanding everything right now.<br/>
 Once you finish the assignment, I'll give you some more context as I did with the first assignment.<br/>
 This way you can understand the concepts better and apply them in the next assignments.
@@ -202,6 +210,8 @@ Did you find it easy and want to do a bit more?<br/>
 Follow the steps I did to create the initial components and create the remaining `div`, `img` and `h1` from your HTML.<br/>
 
 **Important:**<br/>
+To create a new component, you **must** start its name with a capital letter.<br/>
+This is a convention in React to differentiate between regular HTML tags and React components.<br/>
 Now you're going to start importing components from other directories.<br/>
 This is where the `./` and `../` paths come in handy.<br/>
 Make sure to check the paths you're using to import the components.<br/>
