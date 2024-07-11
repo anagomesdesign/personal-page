@@ -166,7 +166,6 @@ Let me break it down for you:
   
   ```
 
-
 A **Function** that returns a **JSX element** is what we call a **React Component**.<br/> 
 **JSX** is a syntax extension for JavaScript that looks similar to HTML as you might've noticed when completing your first assignment.<br/>
 Using JSX syntax, you can write HTML elements inside your JavaScript code almost exactly as you would in HTML.<br/>
