@@ -11,8 +11,8 @@
 
 ## Getting Started
 
-This is a ReactJS project created using the [Next.js](https://nextjs.org/) framework bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).<br/>
-This project has been deployed to the cloud on [Vercel](https://vercel.com).
+This is a ReactJS project built with [Next.js](https://nextjs.org/), a framework for fast and scalable apps, bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) for quick setup.<br/>
+It's deployed on [Vercel](https://vercel.com), a cloud platform that hosts and scales web applications.
 
 The deployment from the `main`("production") branch is accessible through the following link: [https://ana-classroom.vercel.app](https://ana-classroom.vercel.app).
 
