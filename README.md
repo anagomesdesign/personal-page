@@ -3,8 +3,9 @@
 - [Getting Started](#getting-started)
 - [Assignment Guidelines](#assignment-guidelines)
 - Assignments
-  - [1. Migrate an existing HTML/CSS project to Next.js](./assignments/01-migrate-html-css.md#1-migrate-an-existing-htmlcss-project-to-nextjs)
-  - [2. Start using React components](./assignments/02-use-react-component.md#2-start-using-react-components)
+  - [1. Migrate an existing HTML/CSS project to Next.js](./assignments/01-migrate-html-css.md)
+  - [2. Start using React components](./assignments/02-use-react-component.md)
+  - [3. Let's style!](./assignments/03-lets-style.md)
 - [Tips and Resources](#resources)
   - For Git commands, VS Code Git tool, GitHub Pull Requests, and more.
 - [Possible blockers](#possible-blockers)
@@ -117,3 +118,4 @@ After installing a Node version with **NVM**, the NPM commands won't require `su
 ## Possible blockers
 - [Assignment 1 blockers](./assignments/01-migrate-html-css.md#possible-blockers)
 - [Assignment 2 blockers](./assignments/02-use-react-component.md#possible-blockers)
+- [Assignment 3 blockers](./assignments/03-lets-style.md#possible-blockers)
