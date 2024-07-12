@@ -94,6 +94,10 @@ It will even tell you if the deployment is successful or not.<br/>
 This requires a Vercel account linked to your GitHub account. You can create one for free [here](https://vercel.com/signup).<br/>
 
 ## Assignments
+- [1. Migrate an existing HTML/CSS project to Next.js](#1-migrate-an-existing-htmlcss-project-to-nextjs)
+- [2. Start using React components](#2-start-using-react-components)
+
+
 ### 1. Migrate an existing HTML/CSS project to Next.js
 
 **TASK:**<br/>
