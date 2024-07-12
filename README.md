@@ -1,15 +1,15 @@
-## Index
+# Index
 
 - [Getting Started](#getting-started)
-- [Assignment Guidelines](#assignments)
-- [Assignments](#assignments)
-  - [1. Migrate an existing HTML/CSS project to Next.js](#1-migrate-an-existing-htmlcss-project-to-nextjs)
-  - [2. Start using React components](#2-start-using-react-components)
+- [Assignment Guidelines](#assignment-guidelines)
+- Assignments
+  - [1. Migrate an existing HTML/CSS project to Next.js](./assignments/01-migrate-html-css.md#1-migrate-an-existing-htmlcss-project-to-nextjs)
+  - [2. Start using React components](./assignments/02-use-react-component.md#2-start-using-react-components)
 - [Tips and Resources](#resources)
   - For Git commands, VS Code Git tool, GitHub Pull Requests, and more.
 - [Possible blockers](#possible-blockers)
 
-## Getting Started
+# Getting Started
 
 This is a ReactJS project built with [Next.js](https://nextjs.org/), a framework for fast and scalable apps, bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) for quick setup.<br/>
 It's deployed on [Vercel](https://vercel.com), a cloud platform that hosts and scales web applications.
@@ -91,139 +91,6 @@ When you finish the assignment, it's time to publish your work.
 PS: Every time you publish a branch on GitHub, Vercel will create a new preview link in the cloud.<br/>
 If you want to see it, you can create a Pull Request (even if it's not finished) and check the deployment link Vercel will provide once the PR is created.<br/>
 It will even tell you if the deployment is successful or not.<br/>
-This requires a Vercel account linked to your GitHub account. You can create one for free [here](https://vercel.com/signup).<br/>
-
-## Assignments
-- [1. Migrate an existing HTML/CSS project to Next.js](#1-migrate-an-existing-htmlcss-project-to-nextjs)
-- [2. Start using React components](#2-start-using-react-components)
-
-
-### 1. Migrate an existing HTML/CSS project to Next.js
-
-**TASK:**<br/>
-For this assignment, you'll be working solely on the `src/app/` directory. <br/> 
-You'll grab any pure HTML/CSS project you've worked on in the past and migrate it into the `index.tsx` and `index.css` files inside `src/app/pages`.<br/>
-If you have any image folders, you can place them inside a `src/app/images` folder. 
-
-There is an existing "Hello World" that can be used as a reference.
-
-> [!TIP]
-> - you only need to copy the `body` content of your HTML file into the `index.tsx` file.
-
-If you encounter any blockers, look for the [Possible blockers](#assignment-1) section.<br/> 
-If you still have any issues, feel free to ask me any time.
-
-
-### 2. Start using React components
-
-Congratulations! You've successfully already edited your first React component! 🎉
-
-> "What do you mean?"
-
-Well, the `index.tsx` file is a React component already.<br/>
-In React, **almost** everything is a component. A component can be defined in a number of ways, but the most common way is to use a function.
-
-```tsx
-export default function Index() {
-    return (
-        <div>
-            <h1>Hello World!</h1>
-        </div>
-    )
-}
-```
-
-Let me break it down for you:
-- ```tsx
-  //  This syntax is used to make whatever after it available to be used by other files/components
-  //  The 'export' makes it available.
-  //  The 'default' makes it the default export of the file. 
-  //  That means that when importing this component you only need to use the component name.
-  //  More on that later.
-  export default
-  ```
-
-
-- ```tsx
-  //  This syntax creates a function called Index in javascript.
-  //  Functions are blocks of code that you can call whenever you need them.
-  //  Anytime you need to create a new component, you can use this syntax to create it as a function.
-  function Index() {
-    // At the very end of the component function, you need to return a JSX element.
-    // In this case our function is returning a <div> element.
-    return(
-      <div>
-        <h1>Hello World!</h1>
-      </div>
-    )
-  }
-  ```
-
-- ```tsx
-  // Here we are creating a function called Index and making it available to be used by other files/components.
-  export default function Index() {
-    // Our function is returning a JSX element.
-    return (
-        <div>
-            <h1>Hello World!</h1>
-        </div>
-    )
-  }
-  
-  ```
-
-> [!NOTE]
-> A **Function** that returns a **JSX element** is what we call a **React Component**.<br/> 
-**JSX** is a syntax extension for JavaScript that looks similar to HTML as you might've noticed when completing your first assignment.<br/>
-Using JSX syntax, you can write HTML elements inside your JavaScript code almost exactly as you would in HTML.<br/>
-Some important differences were covered in the [Possible blockers](#possible-blockers) section in the first four points.
-
-**TASK:**<br/>
-For this assignment, I took the liberty of creating three new components.<br/> 
-Each one was chosen and named to help you understand one basic concept of React Components.<br/>
-They can all be found under the `src/app/components` directory.
-- `BreakLine.tsx`
-  - As the name suggests, this component is a line break. This is the simplest component you can create since it doesn't need anything to be rendered.
-  - Its only return is a simple `<br/>` tag.
-- `Paragraph.tsx`
-  - This component is your basic paragraph. You can use it just the same as you would use a `<p>` tag in HTML.
-  - Since you wrap your text with the `<p>` tag, you'll be able to do the same here.
-- `Link.tsx`
-  - This component is a link. It will be used instead of the `<a>` tag in HTML.
-  - For this one I changed one of its properties from `href` so you can start to understand how to pass properties to a component.
-
-Your task is to use these components in the `index.tsx` file instead your regular HTML tags.<br/>
-I suggest starting with `BreakLine.tsx` first to understand how to import and use a component.<br/>
-Then move on to `Paragraph.tsx` and finally `Link.tsx`.<br/>
-Before using any of them, open the component file and check its content to understand what it does.<br/>
-I left some more explanations in the comments of each file to help you understand them better.<br/>
-
-To use them, simply call them the same way you use an HTML tag<br/>
-Example:
-```tsx
-  <BreakLine/>
-  <Paragraph>This is a text inside a paragraph.</Paragraph>
-  <Link/>
-```
-
-Just like the first assignment, I don't want you to worry about understanding everything right now.<br/>
-Once you finish the assignment, I'll give you some more context as I did with the first assignment.<br/>
-This way you can understand the concepts better and apply them in the next assignments.
-
-**BONUS:**<br/>
-Did you find it easy and want to do a bit more?<br/>
-Follow the steps I did to create the initial components and create the remaining `div`, `img` and `h1` from your HTML.<br/>
-
-> [!WARNING]
-> To create a new component, you **must** start its name with a capital letter.<br/>
-This is a convention in React to differentiate between regular HTML tags and React components.<br/>
-Now you're going to start importing components from other directories.<br/>
-This is where the `./` and `../` paths come in handy.<br/>
-Make sure to check the paths you're using to import the components.<br/>
-
-As always, if you have any blockers, look for the [Possible blockers](#possible-blockers) section.<br/>
-I'm also here to help you, so don't hesitate to ask questions.<br/>
-
 
 ## Resources
 
@@ -248,57 +115,5 @@ After installing a Node version with **NVM**, the NPM commands won't require `su
     - For examples on how to use NVM, check [this link](https://github.com/nvm-sh/nvm?tab=readme-ov-file#usage).
 
 ## Possible blockers
-- [Assignment 1 blockers](#assignment-1-possible-blockers)
-- [Assignment 2 blockers](#assignment-2-possible-blockers)
-
-
-### Assignment 1 possible blockers
-
-- Seeing weird JSX Element errors? You might've forgotten to run `npm install (or npm i)`. Make sure to run it in the project root before starting your assignments.
-
-- Some requirements for HTML tags that are not enforced in pure HTML but are **required** in React.
-  - When using tags without a child tag/content, you need to close them with a `/` at the end.
-    - For example, `<img src="..." alt="..." />` instead of `<img src="..." alt="...">`.
-  - When using tags with a child, you need to close them with a `</>` at the end. 
-    - For example, `<div><p>text</p></div>` instead of `<div><p>text</p><div>`.  
-  - Special characters need the propper HTML encoding.
-    - Examples:
-      - `&` should be `&amp;` -> &amp;
-      - `<` should be `&lt;` -> &lt;
-      - `>` should be `&gt;` -> &gt;
-      - `"` should be `&quot;` -> &quot;
-      - `'` should be `&apos;` -> &apos;
-    - You can read this raw README.md to see the above examples.
-    - You can check the full list of HTML entities [here](https://www.w3schools.com/html/html_entities.asp).
-
-- The `class` property from HTML was renamed to `className` in React instead.
-  - For example, `<div class="container">` should be `<div className="container">`.
-
-- The `style` property in HTML is used to add inline CSS.<br/> 
-In React, you can use the `style` property as well, but you need to pass an **object** with the CSS properties.
-  - For example, `<div style="color: red;">` should be `<div style={{ color: 'red' }}>`.
-
-- Having trouble using images with `<img/>` tag? refer to [this comment](https://stackoverflow.com/a/68453264) on StackOverflow. Attention on the `import` and `<img src={}/>`.
-
-- When importing any file, pay attention to the path you're using.
-  - Use `./` to refer the same folder of the file you're working on.
-  - Use `../` to refer the parent folder of the file you're working on.
-  - You can go back multiple folders by adding more `../` to the path.
-  - For Example, if you want to import a file from `src/app/images/image.png` and you're in `src/app/pages/index.css`,<br/> 
-  `../` will take you to `src/app/` and then you can add `images/image.png`.<br/>
-  The final path will be `../../images/image.png`.
-
-
-### Assignment 2 possible blockers
-
-- Created a component and receiving an error that it's not a JSX Element? 
-  - Make sure you're returning a JSX element in your component. Ex: 
-    ```tsx
-    export default function MyComponent() {
-      return (<div>Hello World!</div>)
-    }
-    ```
-
-- Still receiving an error that your component is not a JSX Element? 
-  - Make sure you're following the correct React naming convention. 
-    - The component name should start with a capital letter. Ex: `MyComponent` instead of `myComponent`.
+- [Assignment 1 blockers](./assignments/01-migrate-html-css.md#possible-blockers)
+- [Assignment 2 blockers](./assignments/02-use-react-component.md#possible-blockers)
