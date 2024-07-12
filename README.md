@@ -178,10 +178,10 @@ Some important differences were covered in the [Possible blockers](#possible-blo
 For this assignment, I took the liberty of creating three new components.<br/> 
 Each one was chosen and named to help you understand one basic concept of React Components.<br/>
 They can all be found under the `src/app/components` directory.
-- `Br.tsx`
+- `BreakLine.tsx`
   - As the name suggests, this component is a line break. This is the simplest component you can create since it doesn't need anything to be rendered.
   - Its only return is a simple `<br/>` tag.
-- `P.tsx`
+- `Paragraph.tsx`
   - This component is your basic paragraph. You can use it just the same as you would use a `<p>` tag in HTML.
   - Since you wrap your text with the `<p>` tag, you'll be able to do the same here.
 - `Link.tsx`
@@ -189,16 +189,16 @@ They can all be found under the `src/app/components` directory.
   - For this one I changed one of its properties from `href` so you can start to understand how to pass properties to a component.
 
 Your task is to use these components in the `index.tsx` file instead your regular HTML tags.<br/>
-I suggest starting with `Br.tsx` first to understand how to import and use a component.<br/>
-Then move on to `P.tsx` and finally `Link.tsx`.<br/>
+I suggest starting with `BreakLine.tsx` first to understand how to import and use a component.<br/>
+Then move on to `Paragraph.tsx` and finally `Link.tsx`.<br/>
 Before using any of them, open the component file and check its content to understand what it does.<br/>
 I left some more explanations in the comments of each file to help you understand them better.<br/>
 
 To use them, simply call them the same way you use an HTML tag<br/>
 Example:
 ```tsx
-  <Br/>
-  <P>This is a text inside a paragraph.</P>
+  <BreakLine/>
+  <Paragraph>This is a text inside a paragraph.</Paragraph>
   <Link/>
 ```
 
