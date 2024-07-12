@@ -110,7 +110,7 @@ There is an existing "Hello World" that can be used as a reference.
 > [!TIP]
 > - you only need to copy the `body` content of your HTML file into the `index.tsx` file.
 
-If you encounter any blockers, look for the [Possible blockers](#possible-blockers) section.<br/> 
+If you encounter any blockers, look for the [Possible blockers](#assignment-1) section.<br/> 
 If you still have any issues, feel free to ask me any time.
 
 
@@ -248,6 +248,11 @@ After installing a Node version with **NVM**, the NPM commands won't require `su
     - For examples on how to use NVM, check [this link](https://github.com/nvm-sh/nvm?tab=readme-ov-file#usage).
 
 ## Possible blockers
+- [Assignment 1 blockers](#assignment-1-possible-blockers)
+- [Assignment 2 blockers](#assignment-2-possible-blockers)
+
+
+### Assignment 1 possible blockers
 
 - Seeing weird JSX Element errors? You might've forgotten to run `npm install (or npm i)`. Make sure to run it in the project root before starting your assignments.
 
@@ -282,3 +287,18 @@ In React, you can use the `style` property as well, but you need to pass an **ob
   - For Example, if you want to import a file from `src/app/images/image.png` and you're in `src/app/pages/index.css`,<br/> 
   `../` will take you to `src/app/` and then you can add `images/image.png`.<br/>
   The final path will be `../../images/image.png`.
+
+
+### Assignment 2 possible blockers
+
+- Created a component and receiving an error that it's not a JSX Element? 
+  - Make sure you're returning a JSX element in your component. Ex: 
+    ```tsx
+    export default function MyComponent() {
+      return (<div>Hello World!</div>)
+    }
+    ```
+
+- Still receiving an error that your component is not a JSX Element? 
+  - Make sure you're following the correct React naming convention. 
+    - The component name should start with a capital letter. Ex: `MyComponent` instead of `myComponent`.
