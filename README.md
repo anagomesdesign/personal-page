@@ -248,11 +248,11 @@ After installing a Node version with **NVM**, the NPM commands won't require `su
     - For examples on how to use NVM, check [this link](https://github.com/nvm-sh/nvm?tab=readme-ov-file#usage).
 
 ## Possible blockers
-- [Assignment 1](#assignment-1)
-- [Assignment 2](#assignment-2)
+- [Assignment 1 blockers](#assignment-1-possible-blockers)
+- [Assignment 2 blockers](#assignment-2-possible-blockers)
 
 
-### Assignment 1
+### Assignment 1 possible blockers
 
 - Seeing weird JSX Element errors? You might've forgotten to run `npm install (or npm i)`. Make sure to run it in the project root before starting your assignments.
 
@@ -289,7 +289,7 @@ In React, you can use the `style` property as well, but you need to pass an **ob
   The final path will be `../../images/image.png`.
 
 
-### Assignment 2
+### Assignment 2 possible blockers
 
 - Created a component and receiving an error that it's not a JSX Element? 
   - Make sure you're returning a JSX element in your component. Ex: 
