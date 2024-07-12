@@ -1,7 +1,7 @@
 import './index.css'
 import logoAna from '../pages/img/ana-gomes-design-logo.png';
 import LineBreak from '../components/lineBreak/lineBreak';
-import Link from '../components/link/Link';
+import Link from '../components/link/link';
 import Paragraph from '../components/paragraph/paragraph';
 import Div from '../components/div/div';
 import Img from '../components/img/img';
@@ -12,18 +12,14 @@ export default function Index() {
         
         <Div className="container">
             
-            <Div className="portrait">
-                
-            </Div>
+            <Div className="portrait"/>
 
             <Div className="bio">
                 <Img source={logoAna.src} alt={''} style={{ width: '64px'}} />
                 <LineBreak/>
                 <Div>
                     <H1>Hello, I&apos;m Ana! 👋🏽</H1>
-                    {/* <h1>Hello, I&apos;m Ana! 👋🏽</h1> */}
                     <LineBreak/>
-
                     <Paragraph>
                         I&apos;m a Brazilian Product Designer currently based in Canada. I have +10 years of experience working with design, user experience and technology. In my spare time, I love playing video games, drinking coffee and exploring the outdoors.
 
