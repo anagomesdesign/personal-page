@@ -34,12 +34,12 @@ npm install
 npm i
 ```
 
-**Important:**<br/>
-- The command above will read the `package.json` file in your project for any library it might need and will install all of them in a new folder called `node_modules`.
-- This is the `Node.js` way of allowing people make use of libraries from the community.
-- When running this command always make sure you are inside the project folder so the command can read the correct file.
-- Any `npm install` that you ran for other projects will not reflect here.
-- When cloning a new project always run it first before any other action.
+> [!IMPORTANT]<br/>
+> - The command above will read the `package.json` file in your project for any library it might need and will install all of them in a new folder called `node_modules`.
+> - This is the `Node.js` way of allowing people make use of libraries from the community.
+> - When running this command always make sure you are inside the project folder so the command can read the correct file.
+> - Any `npm install` that you ran for other projects will not reflect here.
+> - When cloning a new project always run it first before any other action.
 
 To run the local server and view your progress:
 
@@ -103,8 +103,8 @@ If you have any image folders, you can place them inside a `src/app/images` fold
 
 There is an existing "Hello World" that can be used as a reference.
 
-**Hint:**
-- you only need to copy the `body` content of your HTML file into the `index.tsx` file.
+> [!TIP]
+> - you only need to copy the `body` content of your HTML file into the `index.tsx` file.
 
 If you encounter any blockers, look for the [Possible blockers](#possible-blockers) section.<br/> 
 If you still have any issues, feel free to ask me any time.
@@ -168,7 +168,8 @@ Let me break it down for you:
   
   ```
 
-A **Function** that returns a **JSX element** is what we call a **React Component**.<br/> 
+> [!NOTE]
+> A **Function** that returns a **JSX element** is what we call a **React Component**.<br/> 
 **JSX** is a syntax extension for JavaScript that looks similar to HTML as you might've noticed when completing your first assignment.<br/>
 Using JSX syntax, you can write HTML elements inside your JavaScript code almost exactly as you would in HTML.<br/>
 Some important differences were covered in the [Possible blockers](#possible-blockers) section in the first four points.
@@ -209,8 +210,8 @@ This way you can understand the concepts better and apply them in the next assig
 Did you find it easy and want to do a bit more?<br/>
 Follow the steps I did to create the initial components and create the remaining `div`, `img` and `h1` from your HTML.<br/>
 
-**Important:**<br/>
-To create a new component, you **must** start its name with a capital letter.<br/>
+> [!WARNING]
+> To create a new component, you **must** start its name with a capital letter.<br/>
 This is a convention in React to differentiate between regular HTML tags and React components.<br/>
 Now you're going to start importing components from other directories.<br/>
 This is where the `./` and `../` paths come in handy.<br/>
