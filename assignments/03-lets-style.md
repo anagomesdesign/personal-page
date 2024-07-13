@@ -24,7 +24,7 @@ Example:
 ```
 
 Once you open the `<div>` tag, you are no longer writing JavaScript code. You are writing HTML.<br/>
-As such, whe you write something like this, you will receive an error:
+As such, if you write something like this, you will receive an error:
 ```jsx
     export default function MyComponent() {
         return(
