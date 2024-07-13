@@ -29,8 +29,8 @@ As such, if you write something like this, you will receive an error:
     export default function MyComponent() {
         return(
             <div>
-                const myVar = "Hello World!"; <-- This will throw an error. It's Illegal.
-                <h1>myVar</h1>                <-- This renders "myVar" instead the value you wanted
+                const myVar = "Hello World!"; {/*<-- This will throw an error. It's Illegal.*/}
+                <h1>myVar</h1>                {/*<-- This renders "myVar" instead the value you wanted*/}
             </div>
         )
     }
@@ -43,10 +43,10 @@ The same example from above, now in a correct way:
 
 ```jsx
     export default function MyComponent() {
-        const myVar = "Hello World!"; <-- This is valid JavaScript code
+        const myVar = "Hello World!"; // <-- This is valid JavaScript code
         return(
             <div>
-                <h1>{myVar}</h1>      <-- This will render "Hello World!"
+                <h1>{myVar}</h1>      {/*<-- This will render "Hello World!"*/}
             </div>
         )
     }
@@ -57,20 +57,20 @@ The same example from above, now in a correct way:
 > As I mentioned before, when you **open** the curly braces, you are in a **local context**. Anything you **create** inside it will be lost outside the curly braces.<br/>
 
 ```jsx
-    export default function MyComponent() { <-- Open Context 1
+    export default function MyComponent() {// <-- Open Context 1
         const variable1 = "Hello World!"; 
         return(
             <div> 
 
-                { const variable2 = "Testing"; } <-- Context 2
+                { const variable2 = "Testing"; /* <-- Context 2 */ }
 
-                <h1>{ variable1 }</h1> <-- Context 3 / Correct
+                <h1>{ variable1 /*<-- Context 3 / Correct*/ }</h1> 
 
-                <h1>{ variable2 }</h1> <-- Context 4 / Wrong
+                <h1>{ variable2 /*<-- Context 4 / Wrong*/ }</h1>
 
             </div>
         )
-    } <-- Close Context 1
+    }// <-- Close Context 1
 ```
 
 In the example above, I created 4 different **contexts**.<br/>
