@@ -8,7 +8,7 @@
 //   - Being an Object, props can contain multiple attributes, each of which can
 //     be accessed by using the dot notation.
 
-// Example: and object called `props` with the following attributes:
+// Example: an object called `props` with the following attributes:
 //      name
 //      age
 
@@ -23,7 +23,7 @@
 //  In this example, for the P component 
 //  the `props.children` attribute will contain the text "Click here"
 
-export default function P(props: any) {
+export default function Paragraph(props: any) {
     // This component only returns a simple paragraph with no styling
     return(
         <p>{props.children}</p>
