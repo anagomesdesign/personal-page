@@ -83,21 +83,61 @@ However, `variable2` is **created** inside Context 2, so as soon as the Context 
 This is why Context 4 is wrong, because `variable2` doesn't exists outside Context 2.<br/>
 
 > [!NOTE]<br/>
-> You have already opened the doors to javascript in the previous assignments, when you created you `Div` component and had to access its children to render them.<br/>
+> You have already used Javascript inside your HTML in the previous assignments, when you created your `Div` component and had to access its children to render them.<br/>
 Or when you wanted to use the `className` attribute to style your components.<br/>
+>```jsx
+>    export default function Div(props) {
+>        const { children, className } = props;
+>        return(
+>            <div className={ className }>
+>                { children }
+>            </div>
+>        )
+>    }
+>```
 
-```jsx
-    export default function Div(props) {
-        const { children, className } = props;
+In both cases you had to use the curly braces so you could use the Javascript code inside the HTML.<br/>
+
+> Why do I need to know this?
+
+In order for us to have a component be responsible for its own appearance, but still be able to allow some optional customization,<br/>
+we'll need to add some Javascript logic for our component classes.
+
+> [!NOTE]
+> In HTML when you want to customize a tag you put one or more classes in their attributes like this:<br/>
+> ```tsx
+>     <div class="main-view grid-container">
+>         <div class="picture object-1"></div>
+>         <div class="bio object-2"></div>
+>     </div>
+
+
+
+What if we want this `main-view` behaviour to be a reusable component, but still allow us to add the `grid-container` only in a specific case?<br/>
+We can create a component called `MainView` that has `main-view` class by default, but can also receive custom classes just like you did for the `Div` component.<br/>
+It'd look something like this:
+
+```tsx
+    export default function MainView(props: any) {
+        const {className, children} = props;
+
         return(
-            <div className={ className }>
-                { children }
-            </div>
+            <div className={`main-view ${className}`}> { children } </div>
         )
     }
 ```
 
-In both cases you had to use the curly braces so you could use the Javascript code inside the HTML.<br/>
+In this example we can define the standard behaviour for the `<MainView/>` component using its own CSS file, but still allow for us to call it and pass additional classes, if we so desire.<br/>
+
+```tsx
+    <MainView className="grid-container">
+        <div class="picture object-1"></div>
+        <div class="bio object-2"></div>
+    </MainView>
+```
+
+Here the final `className` would become the same as before, but now we can assure that wherever we use the `<MainView/>` component, we'll apply the `main-view` class to it without having to rewrite it every time.
+
 
 ## Task
 
