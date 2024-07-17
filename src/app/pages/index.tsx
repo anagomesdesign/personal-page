@@ -1,4 +1,3 @@
-import './index.css'
 import logoAna from '../pages/img/ana-gomes-design-logo.png';
 import LineBreak from '../components/lineBreak/lineBreak';
 import Link from '../components/link/link';
@@ -12,9 +11,9 @@ export default function Index() {
         
         <Div className="container">
             
-            <Div className="portrait"/>
+            <Div className="portrait column-1"/>
 
-            <Div className="bio">
+            <Div className="bio column-2">
                 <Img source={logoAna.src} alt={''} style={{ width: '64px'}} />
                 <LineBreak/>
                 <Div>
