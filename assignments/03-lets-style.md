@@ -1,18 +1,26 @@
 # Let's style!
 
-Now that we have a basic understanding of how to create a React component, let's **style** it!<br/>
-So far all you were able to create new components in JavaScript and render them in the browser.<br/>
-Their styling however came all from the same `src/pages/index.css` file.<br/>
-In order to have better organization and let each component be responsible for their own look, we need each to have its own CSS file.<br/>
+Now that we know how to create a React component, it's time to **style** it!<br/>
+
+So far, we've created components in JavaScript and displayed them in the browser. But all their styling came from this single `css` file: (`src/pages/index.css`).<br/>
+
+In order to have better organization, we want each component to have its own CSS file. This way, each component is responsible for its own look and feel. 
+
+Let's get started!<br/>
 
 ## Before the Assignment
 
-Before we begin coding let me explain a few things about JSX and strings in JavaScript.
+Before we dive into the assignment, let's explore the relationship between JSX, strings, and JavaScript.
+
+### The Curly Braces Key
+
 
 > "Curly braces `{}` are the doors to JavaScript"
 
-When you open a JSX tag, you are in HTML mode. Anything you write **must be** valid HTML.<br/>
-Example:
+When working with JSX, it's important to remember that curly braces `{ }` are the gateway to JavaScript. When you open a JSX tag, you're in HTML mode, and anything you write must be valid HTML. 
+
+Here is an example of a JSX tag, where the content **must be** valid HTML code:
+
 ```jsx
     export default function MyComponent() {
         return(
@@ -23,23 +31,11 @@ Example:
     }
 ```
 
-Once you open the `<div>` tag, you are no longer writing JavaScript code. You are writing HTML.<br/>
-As such, if you write something like this, you will receive an error:
-```jsx
-    export default function MyComponent() {
-        return(
-            <div>
-                const myVar = "Hello World!"; {/*<-- This will throw an error. It's Illegal.*/}
-                <h1>myVar</h1>                {/*<-- This renders "myVar" instead the value you wanted*/}
-            </div>
-        )
-    }
-```
+Once you're inside the `<div>` tag, you are in HTML mode. Anything you write inside the `<div>` tag will be **treated as HTML**, not JavaScript code.
 
-However it still possible to bring JavaScript into the HTML world by using curly braces `{}`.<br/>
-When you open curly braces, you open a door to JavaScript inside your HTML.<br/>
-It essencially opens a **local context** where you can write JavaScript code.<br/>
-The same example from above, now in a correct way:
+Additionally, even if you're in HTML mode, you can still incorporate JavaScript by using curly braces `{ }`. This syntax creates a local context, enabling you to write JavaScript code directly within your HTML.
+
+Here is an example of JavaScript code incorporated in HTML:
 
 ```jsx
     export default function MyComponent() {
@@ -51,10 +47,11 @@ The same example from above, now in a correct way:
         )
     }
 ```
+Note that the declaration const `myVar = "Hello World!";` is placed **outside** the return statement. 
 
-> [!CAUTION]<br/>
-> Note that I still had to move the `const myVar = "Hello World!";` line outside the return statement.<br/>
-> As I mentioned before, when you **open** the curly braces, you are in a **local context**. Anything you **create** inside it will be lost outside the curly braces.<br/>
+When you use curly braces `{ }`, you enter a **local scope**, which means that any variables or declarations inside the braces will be scoped to that block and will not be accessible outside of it. In other words, anything created inside the curly braces will be lost once the block is exited.
+
+Let's explore this a bit further by analysing the example bellow:
 
 ```jsx
     export default function MyComponent() {// <-- Open Context 1
@@ -66,25 +63,18 @@ The same example from above, now in a correct way:
 
                 <h1>{ variable1 /*<-- Context 3 / Correct*/ }</h1> 
 
-                <h1>{ variable2 /*<-- Context 4 / Wrong*/ }</h1>
+                <h2>{ variable2 /*<-- Context 4 / Wrong*/ }</h2>
 
             </div>
         )
     }// <-- Close Context 1
 ```
+In the example take a look at `variable1` and `variable2` and their respective placement in the different context blocks created with the use of curly braces `{ }`.
 
-In the example above, I created 4 different **contexts**.<br/>
-Contexts 2, 3 and 4 are **inside** Context 1.<br/>
-
-In this case, `variable1` is **created** in the beginning of Context 1, so everywhere inside Context 1 can **access** it.<br/>
-Since Context 3 is inside Context 1, it can **see** and **use** `variable1`.<br/>
-
-However, `variable2` is **created** inside Context 2, so as soon as the Context is closed, it is lost.<br/>
-This is why Context 4 is wrong, because `variable2` doesn't exists outside Context 2.<br/>
+`variable1` is scoped to `MyComponent` context, which means that any code between the opening and closing `{ }` can access and utilize `variable1`. In contrast, `variable2` is declared in a different context, nested under the HTML code. As a result, `variable2` is only accessible withing its own local scope, defined by it's surrounding curly braces `{ }`.
 
 > [!NOTE]<br/>
-> You have already used Javascript inside your HTML in the previous assignments, when you created your `Div` component and had to access its children to render them.<br/>
-Or when you wanted to use the `className` attribute to style your components.<br/>
+> In the previous assignment, you used JavaScript incorporated on your HTML when you created your `Div`component and had to access it's children elements to render them. You also used when you added the `className` atribute to style your components.
 >```jsx
 >    export default function Div(props) {
 >        const { children, className } = props;
@@ -96,48 +86,31 @@ Or when you wanted to use the `className` attribute to style your components.<br
 >    }
 >```
 
-In both cases you had to use the curly braces so you could use the Javascript code inside the HTML.<br/>
+### Styling components in react
 
-> Why do I need to know this?
+When styling React components, you can define a default styling behavior using the `className` attribute. But you can also allow for additional styling by accepting a `className` prop. This way, you can provide a base style while still giving the flexibility to add more styles as needed. 
 
-In order for us to have a component be responsible for its own appearance, but still be able to allow some optional customization,<br/>
-we'll need to add some Javascript logic for our component classes.
+Here is an example:
 
-> [!NOTE]
-> In HTML when you want to customize a tag you put one or more classes in their attributes like this:<br/>
-> ```tsx
->     <div class="main-view grid-container">
->         <div class="picture object-1"></div>
->         <div class="bio object-2"></div>
->     </div>
-
-
-
-What if we want this `main-view` behaviour to be a reusable component, but still allow us to add the `grid-container` only in a specific case?<br/>
-We can create a component called `MainView` that has `main-view` class by default, but can also receive custom classes just like you did for the `Div` component.<br/>
-It'd look something like this:
-
-```tsx
-    export default function MainView(props: any) {
-        const {className, children} = props;
-
-        return(
-            <div className={`main-view ${className}`}> { children } </div>
-        )
-    }
+```jsx
+function MyComponent({ className }) {
+  return <div className={`base-style ${className}`}>Content</div>
+}
 ```
+In the example above, `base-style` is the default styling fo `MyComponent`, and `className` allows for additional styles to be added. This approach makes your components more reusable and flexible, while still providing a consistent base style.
 
-In this example we can define the standard behaviour for the `<MainView/>` component using its own CSS file, but still allow for us to call it and pass additional classes, if we so desire.<br/>
+Here is the component being used:
 
-```tsx
-    <MainView className="grid-container">
+```jsx
+    <MyComponent className="grid-container">
         <div class="picture object-1"></div>
         <div class="bio object-2"></div>
-    </MainView>
+    </MyComponent>
 ```
 
-Here the final `className` would become the same as before, but now we can assure that wherever we use the `<MainView/>` component, we'll apply the `main-view` class to it without having to rewrite it every time.
+In this example, the style from `base-style` is already applied to `MyComponent` by default, eliminating the need to duplicate code. Additionally, you can still add additional classes, such as `grid-container` in the example, without overriding the existing default style. 
 
+This approach enables you to build upon the base style without redundancy, making your code more efficient and maintainable. 
 
 ## Task
 
