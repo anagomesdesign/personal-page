@@ -2,7 +2,7 @@
 
 Now that we know how to create a React component, it's time to **style** it!<br/>
 
-So far, we've created components in JavaScript and displayed them in the browser. But all their styling came from a single `css` file (`src/pages/index.css`) file.<br/>
+So far, we've created components in JavaScript and displayed them in the browser. But all their styling came from this single `css` file: (`src/pages/index.css`).<br/>
 
 In order to have better organization, we want each component to have its own CSS file. This way, each component is responsible for its own look and feel. 
 
