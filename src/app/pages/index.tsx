@@ -11,10 +11,10 @@ export default function Index() {
         
         <Div className="container">
             
-            <Div className="portrait column-1"/>
+            <Div className="portrait"/>
 
-            <Div className="bio column-2">
-                <Img source={logoAna.src} alt={''} style={{ width: '64px'}} />
+            <Div className="bio">
+                <Img source={logoAna.src} alt={''} style={{ width: '64px', height: '64px'}} />
                 <LineBreak/>
                 <Div>
                     <H1>Hello, I&apos;m Ana! 👋🏽</H1>

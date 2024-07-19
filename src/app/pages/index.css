@@ -10,8 +10,6 @@ p {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "column-1 column-2";
 
     height: 100svh;
 }
@@ -19,9 +17,8 @@ p {
 .portrait {
     background-image: url("img/ana-gomes-photo.jpeg");
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
-    min-height: 230px;
+    min-height: 150px;
 }
 
 .bio {
@@ -29,28 +26,15 @@ p {
     flex-direction: column;
     justify-content: center;
 
-    /*        top  right bottom left  */
-    padding: 10svh 10lvw 10svh 10lvw;
-    min-height: 700px;
+    
+    padding-block: 5svh;  /*  vertical padding  */
+    padding-inline: 5svw; /* horizontal padding */
     background-color: #1E1E1E;
-}
-
-.column-1 {
-    grid-area: column-1;
-}
-
-.column-2 {
-    grid-area: column-2;
 }
 
 @media (max-width: 800px) {
     .container {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 2fr;
-        grid-template-areas: "column-1" "column-2";
-    }
-
-    .bio {
-        min-height: 600px;
     }
 }
