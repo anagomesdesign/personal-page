@@ -1,3 +1,5 @@
+import './index.css';
+
 import logoAna from '../pages/img/ana-gomes-design-logo.png';
 import LineBreak from '../components/lineBreak/lineBreak';
 import Link from '../components/link/link';
