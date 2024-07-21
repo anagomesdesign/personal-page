@@ -7,7 +7,7 @@ p {
     line-height: 32px;
 }
 
-.container {
+.grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
@@ -33,7 +33,7 @@ p {
 }
 
 @media (max-width: 800px) {
-    .container {
+    .grid-container {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 2fr;
     }

@@ -8,8 +8,7 @@ import H1 from '../components/h1/h1';
 
 export default function Index() {
     return (
-        
-        <Div className="container">
+        <Div className="grid-container">
             
             <Div className="portrait"/>
 
@@ -33,6 +32,5 @@ export default function Index() {
                 </Div>
             </Div>
         </Div>
-   
     )
 }
