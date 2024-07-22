@@ -131,7 +131,7 @@ Why not create a new component that already has these classes defined?
 
 - In your `src/components` folder 
   - Create new components for each of your `Div` components.
-    - `<Container/>`
+    - `<GridContainer/>`
     - `<Portrait/>`
     - `<Bio/>`
   - Move their children elements to their respective components.
@@ -140,10 +140,10 @@ Why not create a new component that already has these classes defined?
   ```tsx
     export default function Index() {
         return(
-            <Container>
+            <GridContainer>
                 <Portrait/>
                 <Bio/>
-            </Container>
+            </GridContainer>
         )
     }
   ```
@@ -153,7 +153,7 @@ Why not create a new component that already has these classes defined?
 Once you have your new components, it's time to style them!
 
 - For each class you created in the `index.css` file, move it to the respective component's CSS file.
-  - For example, the `container` class should be moved to the `Container` component's CSS file.
+  - For example, the `grid-container` class should be moved to the `GridContainer` component's CSS file.
 
 
 > [!NOTE]<br/>
