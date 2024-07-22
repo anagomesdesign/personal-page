@@ -1,4 +1,5 @@
-import './index.css'
+import './index.css';
+
 import logoAna from '../pages/img/ana-gomes-design-logo.png';
 import LineBreak from '../components/lineBreak/lineBreak';
 import Link from '../components/link/link';
@@ -9,13 +10,12 @@ import H1 from '../components/h1/h1';
 
 export default function Index() {
     return (
-        
-        <Div className="container">
+        <Div className="grid-container">
             
             <Div className="portrait"/>
 
             <Div className="bio">
-                <Img source={logoAna.src} alt={''} style={{ width: '64px'}} />
+                <Img source={logoAna.src} alt={''} style={{ width: '64px', height: '64px'}} />
                 <LineBreak/>
                 <Div>
                     <H1>Hello, I&apos;m Ana! 👋🏽</H1>
@@ -34,6 +34,5 @@ export default function Index() {
                 </Div>
             </Div>
         </Div>
-   
     )
 }
