@@ -18,7 +18,7 @@ p {
     background-image: url("img/ana-gomes-photo.jpeg");
     background-size: cover;
     background-position: center;
-    min-height: 150px;
+    min-height: 10vh;
 }
 
 .bio {
