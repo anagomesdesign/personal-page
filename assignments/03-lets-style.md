@@ -100,7 +100,8 @@ When styling React components, you can define a default styling behavior using t
 Here is an example:
 
 ```tsx
-function MyComponent({ className }) {
+function MyComponent(props: any) {
+  const { className } = props;
   return <div className={`base-style ${className}`}>Content</div>
 }
 ```
