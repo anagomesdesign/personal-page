@@ -10,7 +10,6 @@ p {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
     height: 100svh;
 }
 
@@ -25,8 +24,6 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    
     padding-block: 5svh;  /*  vertical padding  */
     padding-inline: 5svw; /* horizontal padding */
     background-color: #1E1E1E;

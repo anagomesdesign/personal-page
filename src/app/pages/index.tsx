@@ -7,14 +7,17 @@ import Paragraph from '../components/paragraph/paragraph';
 import Div from '../components/div/div';
 import Img from '../components/img/img';
 import H1 from '../components/h1/h1';
+import GridContainer from '../components/gridContainer/gridContainer';
+import Bio from '../components/bio/bio';
+import Portrait from '../components/portrait/portrait';
 
 export default function Index() {
     return (
-        <Div className="grid-container">
+        <GridContainer>
             
-            <Div className="portrait"/>
+            <Portrait/>
 
-            <Div className="bio">
+            <Bio className="bio">
                 <Img source={logoAna.src} alt={''} style={{ width: '64px', height: '64px'}} />
                 <LineBreak/>
                 <Div>
@@ -32,7 +35,7 @@ export default function Index() {
                         To know more about my professional background or contact me, check my <Link to={'https://www.linkedin.com/in/anacsgomes/'} target={'_blank'}>LinkedIn</Link>.
                     </Paragraph>
                 </Div>
-            </Div>
-        </Div>
+            </Bio>
+        </GridContainer>
     )
 }

@@ -1,0 +1,8 @@
+.bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-block: 5svh;  /*  vertical padding  */
+    padding-inline: 5svw; /* horizontal padding */
+    background-color: #1E1E1E;
+}
