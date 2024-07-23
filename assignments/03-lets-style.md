@@ -152,8 +152,11 @@ Why not create a new component that already has these classes defined?
 
 Once you have your new components, it's time to style them!
 
+- The same way the `index.css` was linked to the `index.tsx` component, create a CSS file for each component you will style.
+  - For Example: `gridComponent.tsx` will have its own `gridComponent.css` next ot it.
 - For each class you created in the `index.css` file, move it to the respective component's CSS file.
   - For example, the `grid-container` class should be moved to the `GridContainer` component's CSS file.
+- When you're done moving all classes, delete the `index.css` file. We won't need it any longer.
 
 
 > [!NOTE]<br/>
