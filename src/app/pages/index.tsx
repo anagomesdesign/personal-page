@@ -1,5 +1,3 @@
-import './index.css';
-
 import logoAna from '../pages/img/ana-gomes-design-logo.png';
 import LineBreak from '../components/lineBreak/lineBreak';
 import Link from '../components/link/link';
@@ -17,12 +15,12 @@ export default function Index() {
             
             <Portrait/>
 
-            <Bio className="bio">
+            <Bio>
                 <Img source={logoAna.src} alt={''} style={{ width: '64px', height: '64px'}} />
                 <LineBreak/>
                 <Div>
                     <H1>Hello, I&apos;m Ana! 👋🏽</H1>
-                    
+                    <LineBreak/>
                     <Paragraph>
                         I&apos;m a Brazilian Product Designer currently based in Canada. I have +10 years of experience working with design, user experience and technology. In my spare time, I love playing video games, drinking coffee and exploring the outdoors.
 

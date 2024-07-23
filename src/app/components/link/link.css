@@ -1,0 +1,9 @@
+a {
+    font-family: Roboto, sans-serif;
+    color: #F6F6F6;
+}
+
+a:hover {
+    color: #D0D3F1;
+    text-decoration: underline;
+}

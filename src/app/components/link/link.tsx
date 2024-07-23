@@ -56,6 +56,8 @@
 
 // While `target` was chosen to match the HTML attribute, 
 // `to` was purposely chosen to look different from the `href` attribute.
+import './link.css'
+
 export default function Link(props: any) {
     // Deconstructing the props object to get the `to`, `target`, and `children` attributes.
     const {to, target, children} = props;
