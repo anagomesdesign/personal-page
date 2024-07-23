@@ -16,7 +16,7 @@ export default function Index() {
             <Portrait/>
 
             <Bio>
-                <Img source={logoAna.src} alt={''} style={{ width: '64px', height: '64px'}} />
+                <Img source={logoAna.src} alt={''} />
                 <LineBreak/>
                 <Div>
                     <H1>Hello, I&apos;m Ana! 👋🏽</H1>
