@@ -8,6 +8,7 @@ import H1 from '../components/h1/h1';
 import GridContainer from '../components/gridContainer/gridContainer';
 import Bio from '../components/bio/bio';
 import Portrait from '../components/portrait/portrait';
+import Button from '../components/button/button';
 
 export default function Index() {
     return (
@@ -16,7 +17,9 @@ export default function Index() {
             <Portrait/>
 
             <Bio>
-                <Img source={logoAna.src} alt={''} />
+                <Img 
+                    source={logoAna.src} 
+                    alt={''} />
                 <LineBreak/>
                 <Div>
                     <H1>Hello, I&apos;m Ana! 👋🏽</H1>
@@ -32,6 +35,14 @@ export default function Index() {
 
                         To know more about my professional background or contact me, check my <Link to={'https://www.linkedin.com/in/anacsgomes/'} target={'_blank'}>LinkedIn</Link>.
                     </Paragraph>
+
+                    <LineBreak/>
+
+                    <Button
+                        title = "LinkedIn">
+                            Let's Connect!
+                    </Button>
+                    
                 </Div>
             </Bio>
         </GridContainer>
