@@ -1,5 +1,3 @@
-import './index.css';
-
 import logoAna from '../pages/img/ana-gomes-design-logo.png';
 import LineBreak from '../components/lineBreak/lineBreak';
 import Link from '../components/link/link';
@@ -7,19 +5,22 @@ import Paragraph from '../components/paragraph/paragraph';
 import Div from '../components/div/div';
 import Img from '../components/img/img';
 import H1 from '../components/h1/h1';
+import GridContainer from '../components/gridContainer/gridContainer';
+import Bio from '../components/bio/bio';
+import Portrait from '../components/portrait/portrait';
 
 export default function Index() {
     return (
-        <Div className="grid-container">
+        <GridContainer>
             
-            <Div className="portrait"/>
+            <Portrait/>
 
-            <Div className="bio">
-                <Img source={logoAna.src} alt={''} style={{ width: '64px', height: '64px'}} />
+            <Bio>
+                <Img source={logoAna.src} alt={''} />
                 <LineBreak/>
                 <Div>
                     <H1>Hello, I&apos;m Ana! 👋🏽</H1>
-                    
+                    <LineBreak/>
                     <Paragraph>
                         I&apos;m a Brazilian Product Designer currently based in Canada. I have +10 years of experience working with design, user experience and technology. In my spare time, I love playing video games, drinking coffee and exploring the outdoors.
 
@@ -32,7 +33,7 @@ export default function Index() {
                         To know more about my professional background or contact me, check my <Link to={'https://www.linkedin.com/in/anacsgomes/'} target={'_blank'}>LinkedIn</Link>.
                     </Paragraph>
                 </Div>
-            </Div>
-        </Div>
+            </Bio>
+        </GridContainer>
     )
 }

@@ -22,6 +22,7 @@
 //  <P>Click here</P>
 //  In this example, for the P component 
 //  the `props.children` attribute will contain the text "Click here"
+import './paragraph.css'
 
 export default function Paragraph(props: any) {
     // This component only returns a simple paragraph with no styling

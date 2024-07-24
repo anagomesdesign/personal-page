@@ -1,0 +1,6 @@
+.portrait {
+    background-image: url("img/ana-gomes-photo.jpeg");
+    background-size: cover;
+    background-position: center;
+    min-height: 10vh;
+}
