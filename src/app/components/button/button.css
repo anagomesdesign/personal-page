@@ -1,0 +1,13 @@
+.primary {
+    font-weight: 600;
+    color: #1E1E1E;
+    background-color: #C0C7C8;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.primary:hover {
+    background-color: #f0f8ff;
+    border: 1px solid #201F1F;
+}
