@@ -40,7 +40,7 @@ export default function Index() {
 
                     <Button
                         title = "LinkedIn">
-                            Let's Connect!
+                            Let&apos;s Connect!
                     </Button>
                     
                 </Div>
