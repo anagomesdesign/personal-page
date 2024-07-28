@@ -1,4 +1,4 @@
-import './button.css'
+import './button.css';
 
 export default function Button(props:any) {
     const {className, type, title, children} = props;

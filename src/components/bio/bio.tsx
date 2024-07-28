@@ -1,4 +1,4 @@
-import './bio.css'
+import './bio.css';
 
 export default function Bio(props:any) {
     const {className, children} = props;
