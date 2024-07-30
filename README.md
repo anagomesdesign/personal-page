@@ -12,13 +12,31 @@
 
 # Getting Started
 
-This is a ReactJS project built with [Next.js](https://nextjs.org/), a framework for fast and scalable apps, bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) for quick setup.<br/>
+Before we start, let's understand what we are using.
+
+- This is a a Typescript based ReactJS project built with [Next.js](https://nextjs.org/).<br/>
+- **Typescript** is an addition to Javascript that helps our code be more organized and easier to maintain.<br/>
+- **Javascript** was made to be run on the browser, but we can use it on a server using Node.js, a runtime environment for Javascript.<br/>
+- **ReactJS** is a library for building components that can be reused and combined to create a full application.<br/>
+- **Next.js** is a framework for React that helps us build a full application with little effort.<br/>
+
+Throughout the assignments, we'll be using bit by bit, pieces and knowledge from each of these technologies.<br/>
+- **Typescript** to organize our code.
+- **ReactJS** to create components.
+- **Next.js** to help us launching our application.
+
 It's deployed on [Vercel](https://vercel.com), a cloud platform that hosts and scales web applications.
 
 The deployment from the `main`("production") branch is accessible through the following link: [https://ana-classroom.vercel.app](https://ana-classroom.vercel.app).
 
-Environment dependencies:
-- Node.js v18 or higher (project created on v20)
+## Environment setup
+
+
+### Node.js
+To be able to run our application you need Node.js 18 or higher. The project was created using Node.js `20.15.1`.
+
+> [!NOTE]<br/>
+> I recommend installing `Node` through a version managar. One of the most popular is NVM (Node Version Manager).
 
 
 To check your Node.js version:
@@ -26,6 +44,11 @@ To check your Node.js version:
 ```bash
 node -v
 ```
+
+### Dependencies
+
+Every Node.js project has dependencies in libraries or frameworks.<br/>
+Before running your project for the first time we need to install them in our local environment.
 
 To install the dependencies:
 
@@ -42,13 +65,16 @@ npm i
 > - Any `npm install` that you ran for other projects will not reflect here.
 > - When cloning a new project always run it first before any other action.
 
+
+### Running the project
+
 To run the local server and view your progress:
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Assignment Guidelines
 
@@ -91,7 +117,7 @@ When you finish the assignment, it's time to publish your work.
 
 PS: Every time you publish a branch on GitHub, Vercel will create a new preview link in the cloud.<br/>
 If you want to see it, you can create a Pull Request (even if it's not finished) and check the deployment link Vercel will provide once the PR is created.<br/>
-It will even tell you if the deployment is successful or not.<br/>
+> It will even tell you if the deployment is successful or not
 
 ## Resources
 
