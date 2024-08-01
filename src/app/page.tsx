@@ -1,3 +1,4 @@
+'use client';
 import GridContainer from '@components/gridContainer/gridContainer';
 import Bio from '@components/bio/bio';
 import Portrait from '@components/portrait/portrait';
