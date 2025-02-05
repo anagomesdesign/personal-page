@@ -174,7 +174,7 @@ export default function Index() {
                             variant="body2"
                             align="center"
                         >
-                            © 2025 Made by Ana Gomes. Be kind, I'm still learning.
+                            © 2025 Work in progress. Made by Ana Gomes.
                         </Typography>                    
                 </Container> 
 
