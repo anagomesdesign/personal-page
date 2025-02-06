@@ -55,6 +55,13 @@ export default function Index() {
 
                             <Button
                                 target="_blank"
+                                href="https://medium.com/@anagomesdesign"
+                                >
+                                    Medium 
+                            </Button>
+
+                            <Button
+                                target="_blank"
                                 href="https://anagomes.squarespace.com/portfolio"
                                 >
                                     Portfolio 
